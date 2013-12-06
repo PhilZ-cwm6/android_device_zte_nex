@@ -5,7 +5,7 @@ USE_CAMERA_STUB := true
 
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8630
+TARGET_BOARD_PLATFORM := msm8960
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Bootloader
