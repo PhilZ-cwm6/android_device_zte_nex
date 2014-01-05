@@ -33,9 +33,9 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
-TARGET_KERNEL_SOURCE := kernel/zte/nex
+TARGET_KERNEL_SOURCE := kernel/zte/msm8930-common
 TARGET_KERNEL_CONFIG := cyanogenmod_nex_defconfig
-TARGET_PREBUILT_KERNEL := device/zte/nex/kernel
+#TARGET_PREBUILT_KERNEL := device/zte/nex/kernel
 
 # fix this up by examining /proc/mtd on a running device
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -57,3 +57,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 # TWRP
 DEVICE_RESOLUTION := 480x800
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+
+# FSTAB
+TARGET_RECOVERY_FSTAB := device/zte/nex/fstab.qcom
+RECOVERY_FSTAB_VERSION := 2
