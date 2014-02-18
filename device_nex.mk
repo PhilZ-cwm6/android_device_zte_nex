@@ -16,6 +16,9 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
+# Vold and Storage
+PRODUCT_COPY_FILES += \
+        device/zte/nex/vold.fstab:system/etc/vold.fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
