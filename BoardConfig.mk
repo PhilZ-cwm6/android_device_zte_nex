@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/zte/N800/BoardConfigVendor.mk
+-include vendor/zte/nex/BoardConfigVendor.mk
 
 
 # Platform
@@ -49,7 +49,7 @@ BOARD_FLASH_BLOCK_SIZE := 512
 # Custom init.rc scripts
 TARGET_PROVIDES_INIT_RC := true
 TARGET_PROVIDES_RECOVERY_INIT_RC := true
-TARGET_RECOVERY_INITRC := device/zte/apollo/recovery/init.recovery.rc
+TARGET_RECOVERY_INITRC := device/zte/nex/rootdir/init.recovery.rc
 
 # Allow Power Button To Be Select In Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -62,7 +62,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Mounts
 RECOVERY_FSTAB_VERSION := 2
-TARGET_RECOVERY_FSTAB := device/zte/nex/fstab.nex
+TARGET_RECOVERY_FSTAB := device/zte/nex/rootdir/etc/fstab.nex
 
 # USB mass storage (doesn't work)
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file

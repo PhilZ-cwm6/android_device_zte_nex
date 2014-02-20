@@ -15,13 +15,13 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+	$(LOCAL_KERNEL):kernel
 # Vold and Storage
 PRODUCT_COPY_FILES += \
-        device/zte/nex/vold.fstab:system/etc/vold.fstab
+	$(LOCAL_PATH)/rootdir/etc/extra.fstab:recovery/root/etc/extra.fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_nex
+PRODUCT_NAME := zte_nex
 PRODUCT_DEVICE := nex

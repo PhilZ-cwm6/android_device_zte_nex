@@ -50,7 +50,7 @@ on init
     mkdir /mnt/fuse 0700 root system
     mount tmpfs tmpfs /mnt/fuse mode=0775,gid=1000
 
-    symlink /data/media /data/media/0
+    # symlink /data/media /data/media/0
     symlink /etc/recovery.fstab /fstab.qcom
 
     write /sys/class/android_usb/android0/enable 0
